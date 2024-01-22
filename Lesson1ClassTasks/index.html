@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Lesson1: HTML</title>
+    </head>
+
+    <body>
+        <h1>Lesson Tasks:</h1>
+            <!--Showing other break options-->
+
+            <hr/> <!--Horizontal Rules-->
+           
+            <p>Creating a paragraph within a heading sections</p>
+            <br/> <!--Line Breaks-->
+            <p><i>Trying different text options</i></p>
+            
+            <hr/>
+
+        <header style="border: 4px solid rgb(172, 23, 137); border-radius: 15px;">
+            <h2>Exercise Five: Creating Tables</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Table Heading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>a</td>
+                            <td>a</td>
+                            <td>a</td>
+                            <td>a</td>
+                        </tr>
+                        <tr>
+                            <td>b</td>
+                            <td>b</td>
+                            <td>b</td>
+                            <td>b</td>
+                        </tr>
+                        <tr>
+                            <td>c</td>
+                            <td>c</td>
+                            <td>c</td>
+                            <td>c</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <style>
+                    table{
+                        border: 2px solid blue;
+                        width: 50%;
+                    }
+
+                    table td{
+                        border: 2px solid rgb(125, 173, 218);
+                        width: 12.5%;
+                    }
+
+                    table th{
+                        border: 2px solid rgb(146, 56, 210);
+                        width: 100%;
+                    }
+                </style>
+
+        </header>
+
+        <p></p>
+
+        <header style="border: 4px solid rgb(65, 163, 163); border-radius: 15px;">
+            <h2> Exercise One: Practicing Tags</h2>
+
+            <i>Attempt2</i>
+            <!--<br> Testing line breaks-->
+            <i>Attempt3</i>
+
+            <p>More content</p>
+
+            <p>More <strong><u>content</u> content</strong></p>
+            
+            <!--Lesson Task One:-->
+            <p><strong><u>Task</u>:</strong> Add a paragraph with example text 
+                <u>AND</u> add another paragraph which contains a link. </p>
+
+            <!--Link tag is called an anchor-->
+            <p>Here's the link test: Click <a href="https://www.google.com" style="color:rgb(221, 28, 176)"><u>here</u></a>
+                to go to Google.</p>
+
+            <!--Trying the previous example with an image-->
+            <p>
+                <a href="https://codefirstgirls.com/">
+                    <img src="https://blogs.kent.ac.uk/seda-employability/files/2021/01/download-2.png"/> 
+                </a>
+            </p>
+
+            <!--Testing out types of list-->
+            <!--Ordered list-->
+            <ol start="12">
+                <li>Item</li>
+                <li>New Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ol>
+            
+            <!--Unordered list-->
+            <ul>
+                <li>Item2</li>
+                <li>Item2</li>
+                <li>Item2</li>
+            </ul>
+
+            <!--The following is an ineffectual way of
+            organising lists and managing updates-->
+            <div>
+                <div1>1. Item</div1>
+                <div1>2. Item</div1>
+                <div1>3. Item</div1>
+            </div>
+            
+        </header>
+
+        <br/>
+        
+        <header style="border: 4px solid rgb(65, 163, 163); border-radius: 15px;">
+           <!--We can add in special characters with references to avoid HTML interpreting
+            characters like < and > as tags.-->
+            <h2>Exercise Two: Testing Character Codes:</h2>
+                <p> <strong> Less than/Greater than:</strong> &lt; &gt;</p>
+                <p><strong> Quotation marks:</strong> &quot;This is a quote&quot;</p>
+
+            <!--
+            Example of code that won't execute properly:<p><a></p>
+            -->
+
+        </header>
+
+        <br/>
+        
+            <header style="border: 4px solid rgb(132, 186, 209); border-radius: 15px;">
+                <h2>Exercise Three: Sections</h2>
+
+                <p>Unaltered part of the exercise.</p>
+    
+                <!--Creating a new section - this enables us to set style features for a 
+                particular area of the website-->
+                
+                <div style="background-color: lightblue">
+                    <p>This is the first bit of text in the new divided section.</p>
+    
+                    <!--As I've not added a link the image isn't interactive-->
+                    <a> 
+                        <img src="https://th.bing.com/th/id/OIP.fmmAx2o6NndScaWWcPGcYQHaE8?w=299&h=199&c=7&r=0&o=5&pid=1.7"/>
+                    </a>
+    
+                    <p>
+                        <span style="background-color:aquamarine">This is the <strong><u>LAST</u></strong> text in the divided section.</span>
+                    </p>
+                </div>
+            </header>
+
+        <br/>
+            
+        <header style="border: 4px solid rgb(132, 186, 209); border-radius: 15px;">
+            <h2>Exercise Four: Using Semantic Tags</h2>
+                <p> This exercise is to be completed. This aspect of the lesson is more about
+                    managing code effectively and enhancing readability.</p>
+
+                            <!--From Exercise Four-->
+            <footer>
+                <p>Test footer element (e.g. Contact details)</p>
+                <p><a href="https://en-gb.facebook.com/">Contact details</a></p>
+            </footer>
+
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/css/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/jquery/">jQuery</a>
+            </nav>
+        </header>
+        
+        <br/>
+
+        <header style="border: 4px solid rgb(65, 163, 163); border-radius: 15px;">
+            <h2>Exercise Six: Embedding Websites</h2>
+                <iframe src="https://www.qa.com/" style="width: 100%; height: 100vh;"></iframe>
+        </header>
+        
+    </body>
+</html>
