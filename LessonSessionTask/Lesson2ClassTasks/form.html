@@ -12,8 +12,10 @@
 
         <h2>Testing Form Input Options</h2>
 
-        <form>
-            
+        <!-- action="URL Here" method="post"-->
+        <!--The default is GET unless you specify another method.-->
+        <form action="http://www.nextpoint.co.uk/test.php" method="post">
+
             <fieldset>
                 <legend>Grouping form items</legend>
                 <h3>Slider Option</h3>
@@ -25,15 +27,20 @@
                 <br>
     
                 <h3>Radio Option</h3>
-                <input type="radio" id="RB" name="radioselect" value="One">
-                <label for="RB">Radio Button</label>
+                <input type="radio" id="RB1" name="radioselect1" value="One" required>
+                <label for="RB1">Radio Button 1</label>
                 <br>
+
+                <input type="radio" id="RB2" name="radioselect2" value="Two" required>
+                <label for="RB2">Radio Button 2</label>
+                <br>
+
             </fieldset>
             
             <fieldset>    
                 <h3>What would you like for lunch?</h3>
                 <label>
-                    <input type="radio" name="LunchOption" value="Tomato">
+                    <input type="radio" name="LunchOption" value="Tomato" required>
                     <span>Tomato</span>
                 </label>
                 <br>
@@ -47,6 +54,8 @@
                     <span>Potatoes</span>
                 </label>
                 <br>
+
+                <input type="submit" name="OKButton" value="OK">
             </fieldset>
 
             <!-- Example code used to write the code above
@@ -55,7 +64,7 @@
              -->
 
              <h3>Colour Option</h3>
-            <input type="color" value="#ff0000"/>
+            <input type="color" name="ColourSelect" value="#ff0000"/>
             <!--The value here needs to be the colour value otherwise
             it can't interpret the input-->
             <br>
@@ -135,7 +144,23 @@
             <input type="text" id="lname" name="lname"><br><br>
             <input type="submit" value="Submit">
 
-          </form>
+        </form>
+
+        <hr>
+        <h2>Example from W3 Schools</h2>
+        <form>
+            <label for="cars">Choose a car:</label>
+            <select  name="cars" id="cars">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+            </select>
+        </form>
 
     </body>
 </html>
