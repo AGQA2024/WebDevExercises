@@ -17,19 +17,38 @@
             <fieldset>
                 <legend>Grouping form items</legend>
                 <h3>Slider Option</h3>
-                <input type="range" max="10" min="0" step="0.1" value="7"/>
+                <input type="range" name="rangeselect" max="10" min="0" step="0.1" value="7"/>
                 <br>
     
                 <h3>Checkbox Option</h3>
-                <input type="checkbox" value="Yes">
+                <input type="checkbox" name="checkboxselect" value="Yes">
                 <br>
     
                 <h3>Radio Option</h3>
-                <input type="radio" id="RB" name="" value="One">
+                <input type="radio" id="RB" name="radioselect" value="One">
                 <label for="RB">Radio Button</label>
                 <br>
             </fieldset>
             
+            <fieldset>    
+                <h3>What would you like for lunch?</h3>
+                <label>
+                    <input type="radio" name="LunchOption" value="Tomato">
+                    <span>Tomato</span>
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="LunchOption" value="Lettuce">
+                    <span>Lettuce</span>
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="LunchOption" value="Potatoes">
+                    <span>Potatoes</span>
+                </label>
+                <br>
+            </fieldset>
+
             <!-- Example code used to write the code above
             <input type="radio" id="html" name="fav_language" value="HTML">
             <label for="html">HTML</label><br>
@@ -82,8 +101,8 @@
             <br>
 
             <h3>Textbox Option</h3>
-            <textarea maxlength="25" rows="10" cols="50" style="text-align:right;" autofocus>
-                
+            <textarea maxlength="25" rows="10" cols="50" style="text-align:right;">
+            <!--autofocus will start a user on whichever form item you include it in-->    
             </textarea>
             <br>
 
