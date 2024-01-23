@@ -13,18 +13,22 @@
         <h2>Testing Form Input Options</h2>
 
         <form>
-            <h3>Slider Option</h3>
-            <input type="range" max="10" min="0" step="0.1" value="7"/>
-            <br>
-
-            <h3>Checkbox Option</h3>
-            <input type="checkbox" value="Yes">
-            <br>
-
-            <h3>Radio Option</h3>
-            <input type="radio" id="RB" name="" value="One">
-            <label for="RB">Radio Button</label>
-            <br>
+            
+            <fieldset>
+                <legend>Grouping form items</legend>
+                <h3>Slider Option</h3>
+                <input type="range" max="10" min="0" step="0.1" value="7"/>
+                <br>
+    
+                <h3>Checkbox Option</h3>
+                <input type="checkbox" value="Yes">
+                <br>
+    
+                <h3>Radio Option</h3>
+                <input type="radio" id="RB" name="" value="One">
+                <label for="RB">Radio Button</label>
+                <br>
+            </fieldset>
             
             <!-- Example code used to write the code above
             <input type="radio" id="html" name="fav_language" value="HTML">
@@ -46,7 +50,7 @@
             <br>
 
             <h3>Email Option</h3>
-            <input type="email" value="abc@gmail.com"/>
+            <input type="email" value="abc@gmail.com" readonly />
             <br>
             
             <!--The following is three different ways of doing the same thing:
@@ -78,11 +82,12 @@
             <br>
 
             <h3>Textbox Option</h3>
-            <textarea maxlength="25">
-                <!--Placehold-->
+            <textarea maxlength="25" rows="10" cols="50" style="text-align:right;" autofocus>
+                
             </textarea>
             <br>
 
+            <!--Different buttons-->
             <h3>Select Option</h3>
             <select>
                 <option>---</option>
@@ -94,9 +99,11 @@
             <input type="button"/>
             <button></button>
 
-            <h3>Reset Option</h3>
-            <input type="reset"/>
-            <br>
+            <label>
+                <h3>Reset Option</h3>
+                <input type="reset"/>
+            </label>
+            <br><br>
         </form>
         
         <hr>
