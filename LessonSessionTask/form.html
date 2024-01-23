@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Lesson 2 Exercises</title>
+    </head>
+
+    <body>
+        <h1>Practicing Creating Forms</h1>
+        <hr>
+        <hr>
+
+        <h2>Testing Form Input Options</h2>
+
+        <form>
+            <h3>Slider Option</h3>
+            <input type="range" max="10" min="0" step="0.1" value="7"/>
+            <br>
+
+            <h3>Checkbox Option</h3>
+            <input type="checkbox" value="Yes">
+            <br>
+
+            <h3>Radio Option</h3>
+            <input type="radio" id="RB" name="" value="One">
+            <label for="RB">Radio Button</label>
+            <br>
+            
+            <!-- Example code used to write the code above
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+             -->
+
+             <h3>Colour Option</h3>
+            <input type="color" value="#ff0000"/>
+            <!--The value here needs to be the colour value otherwise
+            it can't interpret the input-->
+            <br>
+
+            <h3>Date Option</h3>
+            <input type="date"/>
+            <br>
+
+            <h3>Month Option</h3>
+            <input type="month"/>
+            <br>
+
+            <h3>Email Option</h3>
+            <input type="email"/>
+            <br>
+            
+            <h3>Time Option</h3>
+            <input type="time"/>
+            <br>
+
+            <h3>Password Option</h3>
+            <input type="password"/>
+            <br>
+
+            <h3>Textbox Option</h3>
+            <textarea maxlength="25">
+                <!--Placehold-->
+            </textarea>
+            <br>
+
+            <h3>Select Option</h3>
+            <select>
+                <option>---</option>
+                <option>red</option>
+                <option>blue</option>
+            </select>
+            <br>
+
+            <input type="button"/>
+            <button></button>
+
+            <h3>Reset Option</h3>
+            <input type="reset"/>
+            <br>
+        </form>
+        
+        <hr>
+
+        <h2>Example from W3 Schools</h2>
+        <form action="/action_page.php" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+
+          </form>
+
+    </body>
+</html>
