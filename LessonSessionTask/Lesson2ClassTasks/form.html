@@ -38,7 +38,7 @@
             <br>
 
             <h3>Date Option</h3>
-            <input type="date"/>
+            <input type="date" value="2023-08-22" min="2023-06-12" max="2023-10-28"/>
             <br>
 
             <h3>Month Option</h3>
@@ -46,12 +46,32 @@
             <br>
 
             <h3>Email Option</h3>
-            <input type="email"/>
+            <input type="email" value="abc@gmail.com"/>
             <br>
             
-            <h3>Time Option</h3>
-            <input type="time"/>
+            <!--The following is three different ways of doing the same thing:
+            Note: They might not be compliant with accessibility guidelines, 
+            but all might have a purpose depending on what you want to do.-->
+            <h3>Time Option 1</h3>
+            <label for="timeinput">Please select the time:</label>
+            <input id="timeinput" type="time"/>
+            <!--Adding an associated label means that if the user clicks on 
+            the field description instead of the input line, they are still
+            directed to the appropriate input space.-->
             <br>
+
+            <h3>Time Option 2</h3>
+            <label>
+                Please select the time:
+                <input type="time"/>
+            </label>
+
+            <h3>Time Option 3</h3>
+            <label>
+                <span>Please select the time:</span>
+                <input type="time"/>
+            </label>
+        
 
             <h3>Password Option</h3>
             <input type="password"/>
