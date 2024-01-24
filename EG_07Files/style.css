@@ -1,0 +1,39 @@
+/* Copied from index.html */
+body{
+    height: 100%;
+    margin: 0%;
+}
+header{
+    background-color: #005BAB;
+}
+header img{
+    display: block;
+    float: left;
+    height: 3em;
+}
+nav{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul{
+    list-style: none;
+    margin:0%;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul li{
+display: inline;
+margin: 2%;
+}
+
+nav ul li a{
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+a:hover{
+text-decoration: underline;
+}
