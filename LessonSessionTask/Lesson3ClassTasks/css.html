@@ -49,6 +49,11 @@
             [autofocus]{
                 background: yellow;
             }
+            /*The *= is case sensitive unless you add in the i*/
+            [href*="google" i]{
+                background: rgb(14, 14, 14);
+                color:aliceblue;
+            }
             [type="number"]{
                 background: blue;
                 color: aliceblue;
@@ -78,6 +83,11 @@
         <input autofocus/>
         <input type="number"/>
         <input max="3">
+
+        <p><a href="https://www.google.com/">Google</a></p>
+        <p><a href="https://www.Google.com/">Google</a></p>
+        <p><a href="https://www.facebook.com/">Facebook</a></p>
+        <p><a href="https://twitter.com/">Twitter</a></p>
 
         <main>
             <h1>Hello!</h1>
