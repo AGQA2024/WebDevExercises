@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+
+        <!--We tend to create a style container in the head for readability-->
+        <style>
+            body{
+                font-size: 30px;
+            }
+            h1{
+                background-color: aquamarine;
+                color: white;
+            }
+            main{
+                background: greenyellow;
+            }
+            p{
+                color: blue;
+                /* float: right; */
+                /* float: inherit; */
+            }
+            .ppink{
+                color: pink;
+                /* float: left; */
+            }
+            strong{
+                background: purple;
+            }
+
+            /*This is how you comment in CSS*/
+            /*This is how you call ids in CSS*/
+            #notice{
+                background: goldenrod;
+                color: pink;
+                font-size: 3em;
+                padding: 1em;
+                /* font-size: 10px;
+                padding: 20px; */
+            }
+            
+            .big{
+                font-size: big;
+            }
+            .highlight{
+                background: rgb(234, 255, 0);
+            }
+
+            [autofocus]{
+                background: yellow;
+            }
+            [type="number"]{
+                background: blue;
+                color: aliceblue;
+            }
+            [max="3"]{
+                display: inline-block;
+                width: 3em;
+            }
+            [readonly]{
+                color: red;
+                opacity: .6;
+                border: 4px dashed rebeccapurple;
+            }
+        </style>
+    </head>
+    <body>
+
+        <button onclick="document.body.style.fontSize='10px'">10px</button>
+        <button onclick="document.body.style.fontSize='20px'">20px</button>
+        <button onclick="document.body.style.fontSize='30px'">30px</button>
+
+        <input type="range" onpinut="document.body.style.fontSize=this.value+'px'"/>
+
+        <!-- min="1px" max="20px" -->
+
+        <input readonly/>
+        <input autofocus/>
+        <input type="number"/>
+        <input max="3">
+
+        <main>
+            <h1>Hello!</h1>
+            
+            <p class="ppink">This is content...</p>
+            <br>
+            <p>This is <strong>content...</strong></p>
+            <br>
+            <p class="highlight">This is content...</p>
+
+        </main>
+        <!--An id takes priority as it is more sepecificity. i.e. ID > Class in priority.-->
+        <section id="notice">
+            <div>
+                <p class="highlight big">This is the notice.</p>
+            </div>
+        </section>
+    </body>
+</html>
