@@ -6,11 +6,14 @@
         <!--We tend to create a style container in the head for readability-->
         <style>
             body{
-                font-size: 30px;
+                font-size: 20px;
             }
             h1{
                 background-color: aquamarine;
                 color: white;
+                /* padding: 2em 1em 3em 1em;
+                margin: 1em 1em 1em 2em;
+                margin-bottom: 1em; */
             }
             main{
                 background: greenyellow;
@@ -31,12 +34,38 @@
             /*This is how you comment in CSS*/
             /*This is how you call ids in CSS*/
             #notice{
+                display: block; /*This ensures that if someone changes the notice id element to be span rather than div, the blocklevel CSS styles still apply*/
                 background: goldenrod;
                 color: pink;
-                font-size: 3em;
+                font-size: 2em;
                 padding: 1em;
+                /* width: 50vw; */
+                width: calc(50vw + 10px); /*The calculation is needed so that computer works out what 10 extra pixels are in addition to 50% of the total view window.*/
+                height: 25vh;
+                overflow: scroll;
                 /* font-size: 10px;
                 padding: 20px; */
+            }
+            #notice:hover{
+                background: yellowgreen;
+                border: 5px solid blue;
+            }
+
+            #notice p{
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+            #notice > a{
+                color: red;
+                /* font-weight: bold; */
+                text-decoration: underline;
+            }
+
+            #notice p a{
+                color: green;
+                /* font-weight: bold; */
+                text-decoration: underline;
             }
             
             .big{
@@ -46,6 +75,7 @@
                 background: rgb(234, 255, 0);
             }
 
+            /*We can make up attributes ourselves*/
             [autofocus]{
                 background: yellow;
             }
@@ -70,14 +100,37 @@
         </style>
     </head>
     <body>
+        <main>
+            <br>
+            <h1>Hello!</h1>
+            
+            <p class="ppink">This is content...</p>
+            <br>
+            <p>This is <strong>content...</strong></p>
+            <br>
+            <p class="highlight">This is content...</p>
 
+        </main>
+
+        <p>Content content</p>
+        <p>Content content</p>
+
+        <!--An id takes priority as it is more sepecificity. i.e. ID > Class in priority.-->
+        <section id="notice">
+            <a href="https://www.google.com/">Google2</a>
+            <div>
+                <p class="highlight big">This is the notice.</p>
+                <p><a href="https://www.google.com/">Google1</a></p>
+                <a href="https://www.google.com/">Google2</a>
+            </div>
+        </section>
+
+        
         <button onclick="document.body.style.fontSize='10px'">10px</button>
         <button onclick="document.body.style.fontSize='20px'">20px</button>
         <button onclick="document.body.style.fontSize='30px'">30px</button>
 
-        <input type="range" onpinut="document.body.style.fontSize=this.value+'px'"/>
-
-        <!-- min="1px" max="20px" -->
+        <input type="range" oninput="document.body.style.fontSize=this.value+'px'" min="10" max="20"/>
 
         <input readonly/>
         <input autofocus/>
@@ -89,21 +142,5 @@
         <p><a href="https://www.facebook.com/">Facebook</a></p>
         <p><a href="https://twitter.com/">Twitter</a></p>
 
-        <main>
-            <h1>Hello!</h1>
-            
-            <p class="ppink">This is content...</p>
-            <br>
-            <p>This is <strong>content...</strong></p>
-            <br>
-            <p class="highlight">This is content...</p>
-
-        </main>
-        <!--An id takes priority as it is more sepecificity. i.e. ID > Class in priority.-->
-        <section id="notice">
-            <div>
-                <p class="highlight big">This is the notice.</p>
-            </div>
-        </section>
     </body>
 </html>
