@@ -19,6 +19,24 @@
     transition: 1s;
 } */
 
+footer {
+    background-color: #005BAB;
+    height: 3em;
+    text-align: center;
+}
+.socialIcons {
+    height: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.socialIcons:hover {
+    scale: 120%;
+    transition: 0.5s;
+    /* transform: translateY(-50%); */
+}
+
 body {
     font-family: Verdana, sans-serif;   
     height: 100%;
