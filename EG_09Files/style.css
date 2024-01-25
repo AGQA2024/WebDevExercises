@@ -1,3 +1,24 @@
+
+.teamProfiles {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.teamProfiles:hover {
+    filter: grayscale(0%);
+    transition: 1s;
+}
+
+.profilePics {
+    /* -webkit-filter: grayscale(100%); */
+    Filter: inherit;
+}
+
+/* .profilePics:hover {
+    filter: grayscale(0%);
+    transition: 1s;
+} */
+
 body {
     font-family: Verdana, sans-serif;   
     height: 100%;
