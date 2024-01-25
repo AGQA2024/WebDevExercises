@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        h1{
+            background: red;
+            /* transition: all 1s; */
+            transition: all 2s linear 1s;
+            /* transition: all 5s ease-in; */
+            /* transition: background 1s; */
+        }
+        h1:hover{
+            background: blue;
+            padding-left: 3em;
+        }
+
+        .h1secondtest:hover{
+            background: yellow;
+            color: red;
+            transition: background 1s linear 0s, color 1s linear 0s, padding 1s linear 0s;
+        }
+        .slow{
+            transition-duration: 5s;
+        }
+
+        h2{
+            background: purple;
+        }
+
+        div{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .animated{
+            animation: barrel-roll 10s/*infinite*/;
+        }
+        @keyframes barrel-roll{
+            0%{
+                transform: rotate(0deg); 
+                /* We specify this if we want all elements to have the same starting rotation. */
+            }
+            25%{
+                transform: rotate(90deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            75%{
+                transform: rotate(270deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition without class element</h1>
+    <h1 class="h1secondtest slow">Transition with class element</h1>
+    <h2 class="animated">Transistion to play with transform</h1>
+
+    <!-- ease, linear, ease-in, ease-out, ease-in-out, cubic-bezier(n,n,n,n) -->
+    <!-- transofrm: rotate(-2deg) -->
+
+    <!-- display:flex flex-direction:____ -->
+
+    <div>
+        <p>Test text</p>
+        <p>Test text</p>
+        <p>Test text</p>
+        <p>Test text</p>
+    </div>
+</body>
