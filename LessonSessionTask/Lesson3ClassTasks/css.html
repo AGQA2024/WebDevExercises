@@ -97,18 +97,60 @@
                 opacity: .6;
                 border: 4px dashed rebeccapurple;
             }
+
+            .flexcontainer{
+                margin: 1em;
+                display: flex;
+                flex-wrap: nowrap;
+                background-color: orchid;
+                justify-content: center;
+                gap: 5%;
+            }
+            /* .flexcontainer > main{
+                background-color: lemonchiffon;
+                width:  100px;
+                margin: 50px;
+                text-align: center;
+                gap: 50em;
+             } */
+
+             /* .container{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+             } */
+
+             @media screen and (max-width:1700px) {
+                body{
+                    background-color: lightblue;
+                }
+             }
+             @media print {
+                body{
+                    background-color: lightcoral;
+                }
+             }
+             
         </style>
     </head>
     <body>
-        <main>
+        <!-- <main class="flexcontainer" > -->
+        <main class="flexcontainer" >
             <br>
-            <h1>Hello!</h1>
+            <h1>Row 1 Start</h1>
             
-            <p class="ppink">This is content...</p>
+            <p class="ppink">R1E1</p>
             <br>
-            <p>This is <strong>content...</strong></p>
+            <p>This is <strong>R1E2</strong></p>
             <br>
-            <p class="highlight">This is content...</p>
+            <p class="highlight">R1E3</p>
+
+            <h1>Row 2 Start</h1>
+            
+            <p class="ppink">R2E1</p>
+            <br>
+            <p>This is <strong>R2E2</strong></p>
+            <br>
+            <p class="highlight">R2E3</p>
 
         </main>
 
