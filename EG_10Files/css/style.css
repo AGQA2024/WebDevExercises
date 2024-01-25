@@ -13,6 +13,9 @@ header img {
     /* float: left; */
     height: 3em;
     /* z-index: 500; */
+}
+
+header {
     background-color: #005BAB;
 }
 
@@ -102,16 +105,6 @@ nav > h6 {
 main {
     width: 80%;
     margin: 0 auto;
-}
-
-/*2x2 grid of equals*/
-main > article.grid {
-    background-color: #f1f1f1;
-    float: left;
-    margin: 1%;
-    width: 48%;
-    height: 300px;
-    overflow-y: scroll;
 }
 
 /*styles for team profiles*/

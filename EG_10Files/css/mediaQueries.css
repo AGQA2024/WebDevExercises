@@ -1,1 +1,38 @@
-@media screen and 
+@media screen and (min-width:768px) {
+    nav li {
+        display: inline-block;
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:1026px){
+    nav li {
+        width: auto;
+    }
+    nav ul {
+        padding: 0%;
+    }
+    nav {
+        float: right;
+        width: 70%;
+    }
+
+    header img {
+        display: inline-block;
+        width: 30%;
+    }
+
+    h1 {
+        clear: right;
+    }
+
+    /*2x2 grid of equals*/
+    main > article.grid {
+        background-color: #f1f1f1;
+        float: left;
+        margin: 1%;
+        width: 48%;
+        height: 300px;
+        overflow-y: scroll;
+    }
+}
